@@ -28,7 +28,7 @@
 	font-weight: bold;
 }
 .sub-heading {
-	color: gray;
+	color: rgb(175,175,175);
 	font-size: 12px;
 }
 .table-bar {
@@ -40,7 +40,9 @@
 	font-size: 14px;
 }
 .heading-tight {
-	width: 12%;
+	width: 15%;
+	text-align: right;
+	padding: 0 10px;
 }
 .alert-screen {
 	/*Turn this on to look at alert*/
@@ -60,7 +62,7 @@
 	width: 425px;
 	height: 250px;
 	border-radius: 15px;
-	margin: 25% auto;
+	margin: 18% auto;
 }
 .button {
 	background-color: rgb(230,130,130);
