@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Modularity</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="framework.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+  	<div class="instructions-container">
+
+  		<ol class="instruction-list">
+
+			  <li>
+  				<h1 class="instruction-title">Data Table</h1>
+
+	    		<p class="instruction-text">Style a table full of data so that it looks nicer than the brower defaults.</p>
+					<div class="instruction-answer">
+						<!-- Edit here -->
+						<table class="table-common">
+							<tr class="common-border">
+								<td class="data-common first-col">0</td>
+								<td class="data-common">Sean</td>
+								<td class="data-common">Daaken</td>
+								<td class="data-common">@seandaken</td>
+							</tr>
+							<tr class="common-border">
+								<td class="data-common first-col">1</td>
+								<td class="data-common">Raine</td>
+								<td class="data-common">Lourie</td>
+								<td class="data-common">@metaraine</td>
+							</tr>
+							<tr>
+								<td class="data-common first-col">2</td>
+								<td class="data-common">Matt</td>
+								<td class="data-common">Null</td>
+								<td class="data-common">@nullempire</td>
+							</tr>
+						</table>
+				    <!-- End editable area -->
+					</div>
+
+	    		<p class="instruction-text">It should also handle header rows...</p>
+					<div class="instruction-answer">
+						<!-- Edit here -->
+						<table class="table-common">
+							<thead>
+								<tr class="common-border">
+									<th class="data-common first-col">#</th>
+									<th class="data-common">First Name</th>
+									<th class="data-common">Last Name</th>
+									<th class="data-common">Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="common-border">
+									<td class="data-common first-col">0</td>
+									<td class="data-common">Sean</td>
+									<td class="data-common">Daaken</td>
+									<td class="data-common">@seandaken</td>
+								</tr>
+								<tr class="common-border">
+									<td class="data-common first-col">1</td>
+									<td class="data-common">Raine</td>
+									<td class="data-common">Lourie</td>
+									<td class="data-common">@metaraine</td>
+								</tr>
+								<tr>
+									<td class="data-common first-col">2</td>
+									<td class="data-common">Matt</td>
+									<td class="data-common">Null</td>
+									<td class="data-common">@nullempire</td>
+								</tr>
+							</tbody>
+						</table>
+				    <!-- End editable area -->
+					</div>
+
+			  </li>
+
+  			<li>
+  				<h1 class="instruction-title">Stats</h1>
+
+	    		<p class="instruction-text">Three columns, three prominent numbers, three small labels</p>
+					<div class="instruction-answer">
+			    	<!-- Edit here -->
+			    	<table>
+			    		<tbody>
+			    			<tr class="fancy-border center-text">
+			    				<td class="pad-heading"><div class="big-heading">7</div><div class="sub-heading center-text">followers</div></td>
+			    				<td class="pad-heading"><div class="big-heading">59</div><div class="sub-heading center-text">starred</div></td>
+			    				<td class="pad-heading"><div class="big-heading">28</div><div class="sub-heading center-text">following</div></td>
+			    			</tr>
+			    		</tbody>
+			    	</table>
+				    <!-- End editable area -->
+			    </div>
+			  </li>
+
+  			<li>
+  				<h1 class="instruction-title">Bar Chart</h1>
+
+	    		<p class="instruction-text">Bar widths are set in the HTML as if they were populated from the back-end. Everything else should be styled with CSS.</p>
+					<div class="instruction-answer">
+			    	<!-- Edit here -->
+			    	<table class="table-common">
+			    		<tr>
+			    			<th class="heading-tight">Javascript</th>
+			    			<td><div style="width: 99%" class="table-bar">21%</div></td>
+			    		</tr>
+			    		<tr>
+			    			<th>Ruby</th>
+			    			<td><div style="width: 57.1%" class="table-bar">12%</div></td>
+			    		</tr>
+			    		<tr>
+			    			<th>Java</th>
+			    			<td><div style="width: 38.1%" class="table-bar">8%</div></td>
+			    		</tr>
+			    		<tr>
+			    			<th>Python</th>
+			    			<td><div style="width: 38.1%" class="table-bar">8%</div></td>
+			    		</tr>
+			    		<tr>
+			    			<th>Shell</th>
+			    			<td><div style="width: 38.1%" class="table-bar">8%</div></td>
+			    		</tr>
+			    		<tr>
+			    			<th>PHP</th>
+			    			<td><div style="width: 33.3%" class="table-bar">7%</div></td>
+			    		</tr>
+			    		<tr>
+			    			<th>C</th>
+			    			<td><div style="width: 28.8%" class="table-bar">6%</div></td>
+			    		</tr>
+			    		<tr>
+			    			<th>C++</th>
+			    			<td><div style="width: 23.8%" class="table-bar">5%</div></td>
+			    		</tr>
+			    		<tr>
+			    			<th>Perl</th>
+			    			<td><div style="width: 19.0%" class="table-bar">4%</div></td>
+			    		</tr>
+			    		<tr>
+			    			<th>Objective-C</th>
+			    			<td><div style="width: 14.3%" class="table-bar">3%</div></td>
+			    		</tr>
+			    	</table>
+				    <!-- End editable area -->
+			    </div>
+			  </li>
+
+  			<li>
+  				<h1 class="instruction-title">Lightbox</h1>
+
+	    		<p class="instruction-text">The lightbox should display arbitrary content, centered vertically and horizontally, with everything behind it (the rest of the page) darkened. It should obscure the entire screen, no matter where you are on the page. You may want to disable these styles when you're not actively working on them, otherwise they'll cover the whole page.</p>
+					<div class="instruction-answer">
+			    	<!-- Edit here -->
+			    	<div class="alert-screen">
+			    		<div class="alert-position">
+				    		<div class="alert-message">
+					    		<h3>Hello</h3>
+						    	<p>Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears. Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
+						    	<div class="button">
+						    		<a>Close</a>
+						    	</div>
+				    		</div>
+				    	</div>
+			    	</div>
+				    <!-- End editable area -->
+			    </div>
+			  </li>
+
+  			<li>
+  				<h1 class="instruction-title">Media Block</h1>
+
+	    		<p class="instruction-text">A media block is a left-floated image with some content beside it. Think Facebook updates.</p>
+					<div class="instruction-answer">
+			    	<!-- Edit here -->
+			    	<img src="http://placehold.it/50" class="media-block-img">
+			    	<p class="media-block-txt">Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
+				    <!-- End editable area -->
+			    </div>
+
+	    		<p class="instruction-text">Does it work with a different html structure?</p>
+
+		    	<!-- Edit here -->
+					<div class="instruction-answer">
+			    	<div>
+				    	<img src="http://placehold.it/50" class="media-block-img">
+				    </div>
+			    	<div class="media-block-txt">
+				    	<h2>Cupcake Ipsum</h2>
+				    	<p>Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
+				    </div>
+				    <!-- End editable area -->
+				  </div>
+
+	    		<p class="instruction-text">How about nested media objects?</p>
+
+					<div class="instruction-answer">
+			    	<!-- Edit here -->
+			    	<div>
+				    	<img src="http://placehold.it/50" class="media-block-img">
+				    </div>
+			    	<div class="media-block-txt">
+				    	<h2>Cupcake Ipsum</h2>
+				    	<p>Cupcake ipsum dolor sit amet gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
+
+				    	<div>
+					    	<img src="http://placehold.it/32" class="media-block-img">
+					    </div>
+				    	<div class="media-block-txt">
+					    	<h2>I like cupcakes!</h2>
+					    	<p>Cupcake ipsum dolor sit amet caramels jelly beans. Faworki donut applicake cookie. Apple pie wafer gummies biscuit cupcake gummies pastry.</p>
+					    </div>
+
+				    	<div>
+					    	<img src="http://placehold.it/32" class="media-block-img">
+					    </div>
+				    	<div class="media-block-txt">
+					    	<h2>I like cupcakes, too!</h2>
+					    	<p>Cupcake ipsum dolor sit amet donut lemon drops carrot cake topping bonbon powder sweet roll. Lollipop jujubes bonbon chupa chups jelly beans.</p>
+					    </div>
+				    </div>
+				    <!-- End editable area -->
+				  </div>
+
+			  </li>
+
+
+			</ol>
+
+		</div>
+  </body>
+</html>
