@@ -43,6 +43,7 @@
 	width: 12%;
 }
 .alert-screen {
+	/*Turn this on to look at alert*/
 	/*position: absolute;*/
 	top: 0;
 	left: 0;
